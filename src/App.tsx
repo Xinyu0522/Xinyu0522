@@ -504,7 +504,18 @@ export default function App() {
                   <h3 className="text-3xl font-black mb-6 bg-[#EC4899] text-white inline-block px-4 py-2 border-2 border-black rotate-1">
                      📑 旅遊規劃PPT2
                   </h3>
-                  <PPTViewer slides={Array.from({ length: 10 }, (_, i) => `./123/投影片${i + 1}.JPG`)} />
+                  <PPTViewer slides={[
+                     "1aox_GM4yUOPVoS_flJ807jdmXbjJIlGx",
+                     "1Ky2PqQMKvWartpyuOHxQygLVmJeXmCOX",
+                     "1zwn1Id_fS4o6aL-4TzKBpNWpgbdNcy00",
+                     "1BqsIumHsfW1ZcoRJArJfOd4i1LIEcrP7",
+                     "1jOMuDF9y-JhprMTX99NhOC75_MuPjgIr",
+                     "1Rr5SG3KMPmx4k7JvOfJQNPU11wAk-yNt",
+                     "1o7ZlTBv6Ao3nmR3duACK4iGiNufetH72",
+                     "1NCI8I94GhUZE_TCnjzTLTQl1vlgyAzK_",
+                     "1LtpVCIhiYgmvOKn3xN4MSAzk5pWSWLZN",
+                     "1LJryW_cSJe0szHd6na-BXqNzfg79yx3q"
+                  ].map(id => `https://drive.google.com/thumbnail?id=${id}&sz=w1000`)} />
                </div>
 
                {/* 旅遊規劃PPT3 */}
@@ -512,7 +523,18 @@ export default function App() {
                   <h3 className="text-3xl font-black mb-6 bg-[#10B981] text-white inline-block px-4 py-2 border-2 border-black -rotate-1">
                      🎯 旅遊規劃PPT3
                   </h3>
-                  <PPTViewer slides={Array.from({ length: 10 }, (_, i) => `./1234/投影片${i + 1}.JPG`)} />
+                  <PPTViewer slides={[
+                     "1lO46uEVhpuxkBgNKPuMQR9lDDCd2R8VG",
+                     "1pUT8tt_jY4zdsH0w81UcftT-R1em6C7x",
+                     "1VSeLVVXYFtqWqANCPgNzsd77cdVAJnXD",
+                     "18TuDUA8jFIVlkQ-ANMybuhnJMQ9U2Ln_",
+                     "1UgqTJpBmrsvFM8Gg8YP_GuZpLSrm972l",
+                     "1r3rrW1zPY6ZyDZdLne5lCl54SmAZy2P1",
+                     "1Bi49l5DY9pL1MqxT3GGCjJ273eGRY0CW",
+                     "1S6CSUKDTmP08Rcz8VPiHPcG3FApUP4f7",
+                     "1CBS87S4TVjsG4xWLo2vc53vW20Y3pQPV",
+                     "1arXy4xALL4SUUITkBXwwyTuY_KliyLlY"
+                  ].map(id => `https://drive.google.com/thumbnail?id=${id}&sz=w1000`)} />
                </div>
 
                {/* 旅遊規劃PPT4 */}
@@ -520,7 +542,18 @@ export default function App() {
                   <h3 className="text-3xl font-black mb-6 bg-[#8B5CF6] text-white inline-block px-4 py-2 border-2 border-black rotate-1">
                      ✨ 旅遊規劃PPT4
                   </h3>
-                  <PPTViewer slides={Array.from({ length: 10 }, (_, i) => `./12345/投影片${i + 1}.JPG`)} />
+                  <PPTViewer slides={[
+                     "1hJMTsuHf9-zdawEplMnnX5nvPiyYbRTx",
+                     "17Xhl1lCjrTbRtCUOgDrIHse6W1BDAWi_",
+                     "1DqSuZNUoxKaX1h1jRJvoONbEXrGhTB3L",
+                     "1EKQo2u5TDbKrM4_-zfF-hqVYxFB21fb9",
+                     "1aDLDel5YDMWVva63uL5RTWWuX9uevimY",
+                     "1B1g2WIX79n_X-gSttOCJn1PGhXIybAml",
+                     "1EVsnDjf3t8DQy1uAlkJ1gZY1_bVQv7Yn",
+                     "1GWY6dt6lB8TGNfpR1lupWEhIWdpeGJ4A",
+                     "1JUkR43jFUj2zkwAjrD1BMN88thH-FQeo",
+                     "1Rzq0NAQSYL1N6q9ya2kqHIM4tNc71s8J"
+                  ].map(id => `https://drive.google.com/thumbnail?id=${id}&sz=w1000`)} />
                </div>
 
                {/* 旅遊影片 */}
@@ -532,10 +565,10 @@ export default function App() {
                   {/* 垂直捲動排列 */}
                   <div className="flex flex-col gap-12 w-full">
                      {[
-                        { title: "✈️ 旅遊影片 1：熱血啟航！搭飛機出發囉！", src: "./影片1.mp4", bg: "bg-[#FFC324]" },
-                        { title: "🚢 旅遊影片 2：極致享受！體驗泰國夢幻郵輪！", src: "./影片2.mp4", bg: "bg-[#A7F3D0]" },
-                        { title: "🌆 旅遊影片 3：大開眼界！深度體驗泰國紅燈區夜生活！", src: "./影片3.mp4", bg: "bg-[#FBCFE8]" },
-                        { title: "🚀 旅遊影片 4：太褲辣！不小心搭到外太空班機，準備接下一個行程！", src: "./影片4.mp4", bg: "bg-[#93C5FD]" },
+                        { title: "✈️ 旅遊影片 1：熱血啟航！搭飛機出發囉！", src: "https://drive.google.com/file/d/1kIzGJ1jKvSvMzahaCHBDrt6tsRZZ5kCP/preview", bg: "bg-[#FFC324]" },
+                        { title: "🚢 旅遊影片 2：極致享受！體驗泰國夢幻郵輪！", src: "https://drive.google.com/file/d/1v-oC6gSRw-SfXS2kmjwg2BhG2sM7cr8q/preview", bg: "bg-[#A7F3D0]" },
+                        { title: "🌆 旅遊影片 3：大開眼界！深度體驗泰國紅燈區夜生活！", src: "https://drive.google.com/file/d/10eyEAn1jDgU6U2iW1aXRW6DGVhnVXZ5x/preview", bg: "bg-[#FBCFE8]" },
+                        { title: "🚀 旅遊影片 4：太褲辣！不小心搭到外太空班機，準備接下一個行程！", src: "https://drive.google.com/file/d/1-svxK834H-iRO_VPxIhgFv5Tf4VIpeKx/preview", bg: "bg-[#93C5FD]" },
                      ].map((video, idx) => (
                         <div key={idx} className={`w-full flex flex-col p-6 md:p-10 ${video.bg} border-4 border-black rounded-3xl shadow-[8px_8px_0_0_rgba(0,0,0,1)] relative`}>
                            {/* 標題 */}
@@ -545,12 +578,11 @@ export default function App() {
                            
                            {/* 影片本體 */}
                            <div className="w-full aspect-video bg-black rounded-2xl border-4 border-black overflow-hidden shadow-[8px_8px_0_0_rgba(0,0,0,1)] relative flex items-center justify-center mx-auto max-w-5xl">
-                              <video 
+                              <iframe 
                                  src={video.src}
                                  className="w-full h-full object-contain"
-                                 controls
-                                 preload="metadata"
-                                 playsInline
+                                 allow="autoplay; fullscreen"
+                                 allowFullScreen
                               />
                            </div>
                         </div>
@@ -573,7 +605,7 @@ export default function App() {
                         className="group flex flex-col bg-white rounded-3xl border-4 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:-translate-y-4 hover:shadow-[16px_16px_0_0_rgba(0,0,0,1)] transition-all duration-300 overflow-hidden cursor-pointer"
                      >
                         <div className="w-full aspect-square md:aspect-[4/5] bg-pink-50 border-b-4 border-black overflow-hidden relative">
-                           <img src="./67.PNG" alt="美女 3D 模型" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                           <img src="https://drive.google.com/thumbnail?id=1WvvMPboOxkU-acd2HODl6g2_6XX5SM8_&sz=w1000" alt="美女 3D 模型" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                         </div>
                         <div className="p-6 md:p-8 flex items-center justify-center bg-white group-hover:bg-pink-100 transition-colors">
                            <span className="text-2xl font-black text-center text-black">
@@ -590,7 +622,7 @@ export default function App() {
                         className="group flex flex-col bg-white rounded-3xl border-4 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:-translate-y-4 hover:shadow-[16px_16px_0_0_rgba(0,0,0,1)] transition-all duration-300 overflow-hidden cursor-pointer"
                      >
                         <div className="w-full aspect-square md:aspect-[4/5] bg-blue-50 border-b-4 border-black overflow-hidden relative">
-                           <img src="./69.PNG" alt="寵物 3D 模型" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                           <img src="https://drive.google.com/thumbnail?id=1FNQPBrZDDSZ8K6woT1pCQkQc93KTS44W&sz=w1000" alt="寵物 3D 模型" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                         </div>
                         <div className="p-6 md:p-8 flex items-center justify-center bg-white group-hover:bg-blue-100 transition-colors">
                            <span className="text-2xl font-black text-center text-black">
