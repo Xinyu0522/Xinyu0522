@@ -37,7 +37,8 @@ export default function App() {
       <section id="hero" className="min-h-screen flex flex-col justify-center items-center pt-24 pb-8 relative overflow-hidden bg-[#FFC324]">
          <div className="flex flex-col items-center z-10 text-center px-4 w-full mt-4">
             <img 
-              src="./me.jpg" 
+              src="https://drive.google.com/thumbnail?id=1vgSHTCCIA0_wJlILb4ELP3aumwJ1YR7L&sz=w1000"
+              referrerPolicy="no-referrer"
               alt="潘信妤" 
               className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-8 border-black shadow-[12px_12px_0_0_rgba(0,0,0,1)] mb-6 bg-white hover:scale-105 transition-transform"
               onError={(e) => {
@@ -481,7 +482,21 @@ export default function App() {
                   <h3 className="text-3xl font-black mb-6 bg-[#3B82F6] text-white inline-block px-4 py-2 border-2 border-black -rotate-1">
                      🖼️ 旅遊規劃 PPT
                   </h3>
-                  <PPTViewer slides={Array.from({ length: 13 }, (_, i) => `./泰國奢華連假行程企劃/投影片${i + 1}.JPG`)} />
+                  <PPTViewer slides={[
+                     "1nU0inJzOyJVSvm8WBUvVpab9KJZ8UwuD",
+                     "15FMtDPapFnqrPLWfsRdT1MsFnlTo8MyG",
+                     "1fCn-ECfqPYLMoNsDlQxWl9R9YccHcK3q",
+                     "1562oIMevBwh0bd96o9bcVZeRp8aBsXrb",
+                     "1xlFTbPo1qBaIwa_cyOg7qpWkKSsmM9x9",
+                     "1_FmLPdojJxyKJ0SyUz1eyN3CgU15MixU",
+                     "1VnADSMFPUoLR1H0FCUIYYL2s4pA2hIXG",
+                     "12cSge-CYTlF1xu3XQ-2Ij9sImys8ivWR",
+                     "1KUPK3OkgK0920fR58on3fqc-vfsvjec4",
+                     "1xLpI_qh9_8yeKHHcYSwA_PFsGIzL-pnH",
+                     "1lhWr5Yd9krgxGkIV9TiDmMiFQzllYnCT",
+                     "1DmRo_6BA9RLxXDx6M8hte4HDp8xlGYqW",
+                     "1eiXl8IDOuZypeMwBUyU-YWdp3J0EFWwI"
+                   ].map(id => `https://drive.google.com/thumbnail?id=${id}&sz=w1000`)} />
                </div>
 
                {/* 專案規劃展示二 -> 旅遊規劃PPT2 */}
@@ -679,6 +694,7 @@ function PPTViewer({ slides }: { slides: string[] }) {
            src={slides[activeSlide]} 
            alt={`投影片 ${activeSlide + 1}`} 
            className="w-full h-full object-contain"
+           referrerPolicy="no-referrer"
         />
         
         {/* 控制按鈕 (桌機) */}
