@@ -37,7 +37,7 @@ export default function App() {
       <section id="hero" className="min-h-screen flex flex-col justify-center items-center pt-24 pb-8 relative overflow-hidden bg-[#FFC324]">
          <div className="flex flex-col items-center z-10 text-center px-4 w-full mt-4">
             <img 
-              src="/me.jpg" 
+              src="./me.jpg" 
               alt="潘信妤" 
               className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-8 border-black shadow-[12px_12px_0_0_rgba(0,0,0,1)] mb-6 bg-white hover:scale-105 transition-transform"
               onError={(e) => {
@@ -481,7 +481,7 @@ export default function App() {
                   <h3 className="text-3xl font-black mb-6 bg-[#3B82F6] text-white inline-block px-4 py-2 border-2 border-black -rotate-1">
                      🖼️ 旅遊規劃 PPT
                   </h3>
-                  <PPTViewer slides={Array.from({ length: 13 }, (_, i) => `/泰國奢華連假行程企劃/投影片${i + 1}.JPG`)} />
+                  <PPTViewer slides={Array.from({ length: 13 }, (_, i) => `./泰國奢華連假行程企劃/投影片${i + 1}.JPG`)} />
                </div>
 
                {/* 專案規劃展示二 -> 旅遊規劃PPT2 */}
@@ -489,7 +489,7 @@ export default function App() {
                   <h3 className="text-3xl font-black mb-6 bg-[#EC4899] text-white inline-block px-4 py-2 border-2 border-black rotate-1">
                      📑 旅遊規劃PPT2
                   </h3>
-                  <PPTViewer slides={Array.from({ length: 10 }, (_, i) => `/123/投影片${i + 1}.JPG`)} />
+                  <PPTViewer slides={Array.from({ length: 10 }, (_, i) => `./123/投影片${i + 1}.JPG`)} />
                </div>
 
                {/* 旅遊規劃PPT3 */}
@@ -497,7 +497,7 @@ export default function App() {
                   <h3 className="text-3xl font-black mb-6 bg-[#10B981] text-white inline-block px-4 py-2 border-2 border-black -rotate-1">
                      🎯 旅遊規劃PPT3
                   </h3>
-                  <PPTViewer slides={Array.from({ length: 10 }, (_, i) => `/1234/投影片${i + 1}.JPG`)} />
+                  <PPTViewer slides={Array.from({ length: 10 }, (_, i) => `./1234/投影片${i + 1}.JPG`)} />
                </div>
 
                {/* 旅遊規劃PPT4 */}
@@ -505,7 +505,7 @@ export default function App() {
                   <h3 className="text-3xl font-black mb-6 bg-[#8B5CF6] text-white inline-block px-4 py-2 border-2 border-black rotate-1">
                      ✨ 旅遊規劃PPT4
                   </h3>
-                  <PPTViewer slides={Array.from({ length: 10 }, (_, i) => `/12345/投影片${i + 1}.JPG`)} />
+                  <PPTViewer slides={Array.from({ length: 10 }, (_, i) => `./12345/投影片${i + 1}.JPG`)} />
                </div>
 
                {/* 旅遊影片 */}
@@ -517,10 +517,10 @@ export default function App() {
                   {/* 垂直捲動排列 */}
                   <div className="flex flex-col gap-12 w-full">
                      {[
-                        { title: "✈️ 旅遊影片 1：熱血啟航！搭飛機出發囉！", src: "/影片1.mp4", bg: "bg-[#FFC324]" },
-                        { title: "🚢 旅遊影片 2：極致享受！體驗泰國夢幻郵輪！", src: "/影片2.mp4", bg: "bg-[#A7F3D0]" },
-                        { title: "🌆 旅遊影片 3：大開眼界！深度體驗泰國紅燈區夜生活！", src: "/影片3.mp4", bg: "bg-[#FBCFE8]" },
-                        { title: "🚀 旅遊影片 4：太褲辣！不小心搭到外太空班機，準備接下一個行程！", src: "/影片4.mp4", bg: "bg-[#93C5FD]" },
+                        { title: "✈️ 旅遊影片 1：熱血啟航！搭飛機出發囉！", src: "./影片1.mp4", bg: "bg-[#FFC324]" },
+                        { title: "🚢 旅遊影片 2：極致享受！體驗泰國夢幻郵輪！", src: "./影片2.mp4", bg: "bg-[#A7F3D0]" },
+                        { title: "🌆 旅遊影片 3：大開眼界！深度體驗泰國紅燈區夜生活！", src: "./影片3.mp4", bg: "bg-[#FBCFE8]" },
+                        { title: "🚀 旅遊影片 4：太褲辣！不小心搭到外太空班機，準備接下一個行程！", src: "./影片4.mp4", bg: "bg-[#93C5FD]" },
                      ].map((video, idx) => (
                         <div key={idx} className={`w-full flex flex-col p-6 md:p-10 ${video.bg} border-4 border-black rounded-3xl shadow-[8px_8px_0_0_rgba(0,0,0,1)] relative`}>
                            {/* 標題 */}
@@ -558,7 +558,7 @@ export default function App() {
                         className="group flex flex-col bg-white rounded-3xl border-4 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:-translate-y-4 hover:shadow-[16px_16px_0_0_rgba(0,0,0,1)] transition-all duration-300 overflow-hidden cursor-pointer"
                      >
                         <div className="w-full aspect-square md:aspect-[4/5] bg-pink-50 border-b-4 border-black overflow-hidden relative">
-                           <img src="/67.PNG" alt="美女 3D 模型" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                           <img src="./67.PNG" alt="美女 3D 模型" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="p-6 md:p-8 flex items-center justify-center bg-white group-hover:bg-pink-100 transition-colors">
                            <span className="text-2xl font-black text-center text-black">
@@ -575,7 +575,7 @@ export default function App() {
                         className="group flex flex-col bg-white rounded-3xl border-4 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:-translate-y-4 hover:shadow-[16px_16px_0_0_rgba(0,0,0,1)] transition-all duration-300 overflow-hidden cursor-pointer"
                      >
                         <div className="w-full aspect-square md:aspect-[4/5] bg-blue-50 border-b-4 border-black overflow-hidden relative">
-                           <img src="/69.PNG" alt="寵物 3D 模型" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                           <img src="./69.PNG" alt="寵物 3D 模型" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="p-6 md:p-8 flex items-center justify-center bg-white group-hover:bg-blue-100 transition-colors">
                            <span className="text-2xl font-black text-center text-black">
